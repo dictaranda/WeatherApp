@@ -16,7 +16,7 @@ ul {
     position: Center;
   }
   
-  .card-body {
+   .card-body {
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     color: black;
     border-radius: 10px;
@@ -31,4 +31,7 @@ ul {
   }
   .forecasttemp {
     font-size: 12px;
+  }
+  .coded {
+    color: blue;
   }
