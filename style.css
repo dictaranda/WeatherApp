@@ -3,6 +3,7 @@ ul {
     margin-top: 50px;
     opacity: 85%;
     font-size: 12px;
+    list-style-type: none;
   }
   
   body {
