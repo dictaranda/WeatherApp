@@ -57,6 +57,7 @@ function nowPosition(position) {
 }
 navigator.geolocation.getCurrentPosition(nowPosition);
 function currentTemperature(response) {
+    console.log(response.data);
     let temperature = Math.round(response.data.main.temp);
     let h2 = document.querySelector("h2");
     h2.innerHTML = `It is currently ${temperature}° in ${response.data.name}`;
