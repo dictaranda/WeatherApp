@@ -61,6 +61,8 @@ function currentTemperature(response) {
     let temperature = Math.round(response.data.main.temp);
     let h2 = document.querySelector("h2");
     h2.innerHTML = `It is currently ${temperature}° in ${response.data.name}`;
+    let forecasticon = document.querySelector("#forecasticon");
+    forecasticon.setAttribute = ("forecasticon", "http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png");
 }
 function convertTemp(event) {
     event.preventDefault();
